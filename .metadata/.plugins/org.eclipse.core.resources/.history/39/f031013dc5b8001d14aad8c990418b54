@@ -1,0 +1,11 @@
+package product;
+
+public class Search {
+	
+	public void displayProduct(Product product) {
+		
+		if(product.getProductList().contains(product.getProduct()))
+		
+	}
+	
+}

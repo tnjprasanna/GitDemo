@@ -1,0 +1,12 @@
+package automationFramework;
+
+public class PracticeFormModifiedPageObject {
+	
+	@FindBy(how = How.NAME, using = "firstname")
+	public WebElement firsName;
+
+	@FindBy(how = How.NAME, using = "firstname")
+	@CacheLookup
+	public WebElement firsNameCached;
+
+}

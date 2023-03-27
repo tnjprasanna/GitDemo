@@ -1,0 +1,41 @@
+package com.testNGRA;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import com.employeebase.api.TestBase;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class TC_003_DELETE_EMPLOYEE extends TestBase {
+	
+	RequestSpecification httpRequest;
+	Response response;
+	
+	@BeforeClass
+	void deleteEmp() throws InterruptedException {
+		
+		RestAssured.baseURI ="https://dummy.restapiexample.com/api/v1/employees";
+		httpRequest =	RestAssured.given();
+		response = httpRequest.request(Method.GET,"/employees");
+		
+		JsonPath jsonpathEvaluator = response.jsonPath();
+		
+		jsonpathEvaluator.get("[0].id");
+		response = httpRequest.request(Method.DELETE,"/delete/"+empID);
+		Thread.sleep(3000);
+	}
+	
+	@Test
+	void checkResponseBody() {
+		
+		String responseBody = response.getBody().asString();
+		Assert.assertEquals(responseBody.contains("successfully! deleted Records"),true);
+	}
+
+}

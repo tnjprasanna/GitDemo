@@ -1,0 +1,43 @@
+package com.testNGRA;
+
+import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.employeebase.api.TestBase;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class TC_001_GET_Request extends TestBase {
+	
+	@BeforeTest
+	void getAllEmp()  {
+		
+	}
+	
+	@Test
+	void getDetails() {
+		
+		//Specify base URI
+		RestAssured.baseURI = "https://dummy.restapiexample.com/api/v1";
+		
+		//Request Object
+		RequestSpecification httpRequest = RestAssured.given();
+		
+		//Response Object
+		Response response = httpRequest.request(Method.GET,"/employees");
+		
+		String responseBody = response.getBody().asString();
+		System.out.println("Response body is: "+responseBody);
+		
+		int statusCode = response.statusCode();
+		System.out.println("****************************");
+		System.out.println(statusCode);
+		System.out.println("****************************");
+		Assert.assertEquals(statusCode, 200);
+	}
+
+}

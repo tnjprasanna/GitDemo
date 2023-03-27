@@ -1,0 +1,26 @@
+package com.testNGRA;
+
+import org.testng.annotations.BeforeClass;
+
+import com.employeebase.api.TestBase;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class TC_003_DELETE_EMPLOYEE extends TestBase {
+	
+	RequestSpecification httpRequest;
+	Response response;
+	
+	@BeforeClass
+	void deleteEmp() {
+		
+		RestAssured.baseURI ="https://dummy.restapiexample.com/api/v1/employees";
+		httpRequest =	RestAssured.given();
+		response = httpRequest.request(Method.DELETE,"/delete/"+empID)
+		
+	}
+
+}

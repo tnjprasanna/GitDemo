@@ -1,0 +1,9 @@
+package com.qa.lib;
+
+public class TestBase {
+	
+	public testMethod() {
+		System.out.println("test method");
+	}
+
+}

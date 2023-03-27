@@ -1,0 +1,134 @@
+[1676271163.616][INFO]: Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 15831
+[1676271163.616][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1676271164.208][INFO]: [3c221fd50468ac53ba6d0e65d737c269] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1676271164.219][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1676271164.220][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1676271164.224][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\PVHASINI\AppData\Local\Temp\scoped_dir5248_1271425742" data:,
+[1676271164.931][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1676271165.016][INFO]: [3c221fd50468ac53ba6d0e65d737c269] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "109.0.5414.120",
+      "chrome": {
+         "chromedriverVersion": "109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172})",
+         "userDataDir": "C:\\Users\\PVHASINI\\AppData\\Local\\Temp\\scoped_dir5248_1271425742"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:65027"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "3c221fd50468ac53ba6d0e65d737c269"
+}
+[1676271165.387][INFO]: [3c221fd50468ac53ba6d0e65d737c269] COMMAND Navigate {
+   "url": "https://toolsqa.com/automation-practice-form/"
+}
+[1676271165.387][INFO]: Waiting for pending navigations...
+[1676271165.390][INFO]: Done waiting for pending navigations. Status: ok
+[1676271165.760][INFO]: Waiting for pending navigations...
+[1676271166.785][INFO]: Done waiting for pending navigations. Status: ok
+[1676271166.785][INFO]: [3c221fd50468ac53ba6d0e65d737c269] RESPONSE Navigate
+[1676271166.844][INFO]: [3c221fd50468ac53ba6d0e65d737c269] COMMAND FindElement {
+   "using": "css selector",
+   "value": "*[name='firstname']"
+}
+[1676271166.844][INFO]: Waiting for pending navigations...
+[1676271166.871][INFO]: Done waiting for pending navigations. Status: ok
+[1676271166.885][INFO]: Waiting for pending navigations...
+[1676271166.886][INFO]: Done waiting for pending navigations. Status: ok
+[1676271166.886][INFO]: [3c221fd50468ac53ba6d0e65d737c269] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"*[name='firstname']"}
+  (Session info: chrome=109.0.5414.120)

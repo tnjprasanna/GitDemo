@@ -1,0 +1,23 @@
+package progs;
+
+public class TestIT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Number palindrome
+		/*
+		create three int varriable (reminder,temp,sum) one initialize with zero(sum)
+		create another int varriable(number) and assign the value 
+		assign that number value to temp 
+		put while loop as number > 0
+		get number%10 and assign to reminder varriable (i.e reminder=number%10)
+		multiple sum with 10 and append the reminder and assign to sum itself
+		get the reminder for number by 10
+		put if condition temp equal to sum then palindrome else not palindrome.
+		*/
+		
+		
+
+	}
+}

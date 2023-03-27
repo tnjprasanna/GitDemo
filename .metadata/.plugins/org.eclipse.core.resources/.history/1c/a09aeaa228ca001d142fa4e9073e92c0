@@ -1,0 +1,13 @@
+package com.testNGRA;
+
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class TC_003_DELETE_EMPLOYEE {
+	
+	RequestSpecification spec;
+	Response response;
+	
+	
+
+}

@@ -1,0 +1,18 @@
+package com.test.com;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String text ="swe";
+		String rev ="";
+		int strLen = text.length();
+		
+		for(int i = strLen;i>0;i--) {
+			rev += text.charAt(i);
+		}
+		System.out.println(rev);
+		
+	}
+}

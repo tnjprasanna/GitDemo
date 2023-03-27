@@ -1,0 +1,20 @@
+package progs;
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		String s = "raman";
+		int strLen = s.length();
+		String rev="";
+		
+		for(int i=strLen;i>0;i--){
+			
+			String rev = s.charAt(i);
+			}
+
+	}
+
+}

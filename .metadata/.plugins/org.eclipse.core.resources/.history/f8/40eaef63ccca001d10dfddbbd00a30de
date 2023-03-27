@@ -1,0 +1,46 @@
+package progs;
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "Selenium";
+		int strLen = s.length();
+		char rev;
+		String rev1="";
+		
+		for(int i=strLen-1;i>=0;i--){
+			
+			 rev = s.charAt(i);
+			 System.out.print(rev);
+			 
+			 rev1 = rev1 + s.charAt(i);
+			
+			}System.out.println();
+		 	System.out.println(rev1);
+		 	
+		 	StringBuffer sf = new StringBuffer(s);
+		 	System.out.println(sf.reverse());
+		 	
+		 	String str1 = "testWIN@!#$@#45";
+		 	String str2=str1.replaceAll("[^a-zA-Z0-9]", "");
+		 	System.out.println(str2);
+		 	
+		 	//Rev Int
+		 	int num1 = 123456;
+		 	int r=0;
+		 	while(i!=0) {
+		 		r = i%10;
+		 		System.out.print(r);
+		 		i/=10;
+		 	}
+		 	
+		 	int num2=789, rem = 0;
+		 	while(num2!=0) {
+		 		rem = rem *10 + rem%10;
+		 		num2/=10;
+		 	}
+		 	System.out.println("Reverse Num: "+rem);
+	}
+
+}

@@ -1,0 +1,38 @@
+package progs;
+
+public class TestIT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Amstrong Number
+		/*
+		Initialize the number as Int.
+		create Original Number, reminder, result =0 as Integer.
+		Assign the Number to Original Number.
+		create while loop orginalNumber != 0.
+		Get the reminder value using % of orginalNumber and store to reminder
+		Use Math.pow function and multiple 3 time then add to result variable 
+		and store to same result variable
+		Divide the OriginalNumber by 10 and store it into orginalNumber itself.
+		create if loop and verify the orginalNumber equal to number.
+		*/
+		
+		int number=231;
+		int originalNumber, reminder, result=0;
+		originalNumber = number;
+		while(originalNumber !=0) {
+			reminder = originalNumber%10;
+			result += Math.pow(originalNumber, 3);
+			originalNumber /= 10;
+			if(originalNumber==number) {
+				System.out.println("given number is amstrong number");
+			} else {
+				System.out.println("given number is not amstrong number");
+			}
+		}
+		
+
+	}
+
+}

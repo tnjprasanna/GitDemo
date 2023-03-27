@@ -1,0 +1,25 @@
+package progs;
+
+public class Practice1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		String s = "Selenium";
+		int strLen = s.length();
+		char rev;
+		String rev1="";
+		
+		for(int i=strLen-1;i>=0;i--){
+			
+			 rev = s.charAt(i);
+			 System.out.print(rev);
+			 
+			 rev1 = rev1 + s.charAt(i);
+			
+			}
+		 	System.out.println(rev1);
+	}
+
+}

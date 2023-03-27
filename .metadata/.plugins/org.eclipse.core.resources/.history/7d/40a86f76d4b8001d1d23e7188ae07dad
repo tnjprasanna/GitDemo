@@ -1,0 +1,15 @@
+package product;
+
+public class Search {
+	
+	public String displayProduct(io.cucumber.messages.types.Product prod) {
+		
+		if(prod.getProductList().contains(prod.getProduct())) {
+			
+			return prod.getProduct();
+		}
+		return null;
+		
+	}
+	
+}

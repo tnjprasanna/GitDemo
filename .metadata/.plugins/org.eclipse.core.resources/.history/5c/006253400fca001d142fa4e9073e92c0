@@ -1,0 +1,9 @@
+package com.employeeapi.utilities;
+
+public class RestUtils {
+	
+	public static String empName() {
+		
+	}
+
+}
